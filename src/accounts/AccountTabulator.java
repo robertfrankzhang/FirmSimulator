@@ -169,9 +169,9 @@ public class AccountTabulator {
 			}
 			
 			if (creditObject.type.equals(AccountType.ASSET)) {
-				creditObject.value += amount;
-			}else {
 				creditObject.value -= amount;
+			}else {
+				creditObject.value += amount;
 			}
 			
 			this.accountsMap.put(debitAccountID, debitObject);
